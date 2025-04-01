@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArnoubaSweets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gradient-to-r from-pink-400 to-purple-600 font-sans flex items-center justify-center min-h-screen">
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-center min-h-screen container mx-auto px-6 md:px-12 lg:px-16">
+        <div class="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
+            <!-- Image -->
+            <div class="flex-1 flex justify-center fade-in" id="image">
+                <img src="img/pic1.png" alt="Profile Picture" class="w-1/2 max-w-md rounded-full shadow-lg">
+            </div>
+            <!-- Text Content -->
+            <div class="text-center md:text-left flex-1 fade-in" id="text">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight xl:text-5xl">
+                    😍😘𝓗𝓮𝓵𝓵𝓸, 𝓘'𝓶 <span class="text-yellow-300">𝓛𝓲𝓛𝔂𝓪𝓷𝓪 𝓛𝓲𝓛𝓲😍😎</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-200 max-w-lg">
+                    𝕬 𝖕𝖆𝖘𝖘𝖎𝖔𝖓𝖆𝖙𝖊 𝖈𝖔𝖓𝖙𝖊𝖓𝖙 𝖈𝖗𝖊𝖆𝖙𝖔𝖗 𝖘𝖍𝖆𝖗𝖎𝖓𝖌 𝖒𝖞 𝖏𝖔𝖚𝖗𝖓𝖊𝖞 𝖆𝖓𝖉 𝖈𝖗𝖊𝖆𝖙𝖎𝖛𝖎𝖙𝖞 𝖜𝖎𝖙𝖍 𝖙𝖍𝖊 𝖜𝖔𝖗𝖑𝖉. 𝕷𝖊𝖙'𝖘 𝖈𝖔𝖓𝖓𝖊𝖈𝖙!
+                </p>
+                <div class="mt-6 flex justify-center md:justify-start space-x-6">
+                    <a href="#" class="text-white text-3xl hover:text-yellow-300 transition" title="X">
+                        <img src="img/x.png" alt="X" class="w-14 inline-block">
+                    </a>
+                    <a href="#" class="text-white text-3xl hover:text-yellow-300 transition" title="Rumble">
+                        <img src="img/rumble.png" alt="Rumble" class="w-12 inline-block">
+                    </a>
+                    <a href="#" class="text-white text-3xl hover:text-yellow-300 transition" title="Facebook">
+                        <img src="img/fcb.png" alt="Facebook" class="w-12 inline-block">
+                    </a>
+                    <a href="#" class="text-white text-3xl hover:text-yellow-300 transition" title="tiktok">
+                        <img src="img/tiktok.png" alt="tiktok" class="w-14 inline-block">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.getElementById("image").classList.add("opacity-100", "translate-y-0");
+                document.getElementById("text").classList.add("opacity-100", "translate-y-0");
+            }, 200);
+        });
+    </script>
+    
+</body>
+
+</html>
+
